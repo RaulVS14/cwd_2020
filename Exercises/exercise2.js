@@ -34,13 +34,13 @@ function moveCommand(direction) {
 }
 
 //#2 return value when moveCommand("forward");
-console.log(undefined  === moveCommand("forward"));
+console.log(undefined === moveCommand("forward"));
 //#3 return value when moveCommand("back");
-console.log("you arrived home"  === moveCommand("back"));
+console.log("you arrived home" === moveCommand("back"));
 //#4 return value when moveCommand("right");
-console.log("you found a river"  === moveCommand("right"));
+console.log("you found a river" === moveCommand("right"));
 //#5 return value when moveCommand("left");
-console.log(undefined  === moveCommand("left"));
+console.log(undefined === moveCommand("left"));
 
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
 function whatWeekDayNameIsIt(number) {

@@ -9,12 +9,14 @@ let rabbit = '🐇';
 '     ||<- Start line'
 '       🐢'
 '       🐇'
-turtle = turtle.padStart(7);
-rabbit = rabbit.padStart(7);
 // when you do:
 console.log(startLine);
 console.log(turtle);
 console.log(rabbit);
+
+// ANSWER
+turtle = turtle.padStart(7);
+rabbit = rabbit.padStart(7);
 
 
 // #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
@@ -31,5 +33,6 @@ let obj = {
 }
 // to this:
 'my name is Rudolf the raindeer'
+// Answer
 Object.entries(obj).map((ent) => `${ent[0]} ${ent[1]}`).join(" ");
 Object.entries(obj).reduce((acc, ent) => `${acc} ${ent[0]} ${ent[1]}`, '');

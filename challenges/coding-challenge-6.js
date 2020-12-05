@@ -12,10 +12,30 @@ const testTextNumberArray = [[1, 2], ["2", "3"]];
 
 function answer(arr) {
     let newArray = [];
-    for (let i in arr) {
-        console.log(i);
+    for (let i = 0; i < arr.length; i++) {
+        if (i) {
+            let currentElement = arr[i];
+            if (newArray.length === 0) {
+                newArray.push(currentElement);
+            } else {
+                let currentNewArrayElement = newArray[j];
+                for (let j = 0; j < newArray.length; j++) {
+                    if (newArray[j] === currentElement) {
+                        newArray[j] = [currentNewArrayElement, currentElement];
+                    } else {
+                        if (Array.isArray(currentNewArrayElement)) {
+                            if (newArray[j] === currentNewArrayElement[0]) {
+                                newArray[j].push(currentElement)
+                            }
+                        } else {
+                            
+                        }
+                    }
+                }
+            }
+        }
     }
-    return newArray;
+    return arr;
 }
 
 console.log(answer(inputArray) === testInputArray)

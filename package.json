@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/RaulVS14/cwd_2020#readme",
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.21"
   }
 }
